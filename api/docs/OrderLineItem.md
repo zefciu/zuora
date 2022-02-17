@@ -1,0 +1,42 @@
+# OrderLineItem
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**amount** | **float** | The calculated gross amount for the Order Line Item.  | [optional] 
+**amount_without_tax** | **float** | The calculated gross amount for an order line item excluding tax. If the tax mode is tax exclusive, the value of this field equals that of the &#x60;amount&#x60; field.  If the tax mode of an order line item is not set, the system treats it as tax exclusive by default. The value of the &#x60;amountWithoutTax&#x60; field equals that of the &#x60;amount&#x60; field.  If you create an order line item from the product catalog, the tax mode and tax code of the product rate plan charge are used for the order line item by default. You can still overwrite this default set-up by setting the tax mode and tax code of the order line item.  | [optional] 
+**id** | **str** | The sytem generated Id for the Order Line Item.  | [optional] 
+**uom** | **str** | Specifies the units to measure usage.  | [optional] 
+**accounting_code** | **str** | The accountingCode for the Order Line Item.  | [optional] 
+**adjustment_liability_accounting_code** | **str** | The accounting code on the Order Line Item object for customers using [Zuora Billing - Revenue Integration](https://knowledgecenter.zuora.com/Zuora_Revenue/Zuora_Billing_-_Revenue_Integration).  | [optional] 
+**adjustment_revenue_accounting_code** | **str** | The accounting code on the Order Line Item object for customers using [Zuora Billing - Revenue Integration](https://knowledgecenter.zuora.com/Zuora_Revenue/Zuora_Billing_-_Revenue_Integration).  | [optional] 
+**amount_per_unit** | **float** | The actual charged amount per unit for the Order Line Item.  | [optional] 
+**bill_target_date** | **date** | The target date for the Order Line Item to be picked up by bill run for billing.  | [optional] 
+**contract_asset_accounting_code** | **str** | The accounting code on the Order Line Item object for customers using [Zuora Billing - Revenue Integration](https://knowledgecenter.zuora.com/Zuora_Revenue/Zuora_Billing_-_Revenue_Integration).  | [optional] 
+**contract_liability_accounting_code** | **str** | The accounting code on the Order Line Item object for customers using [Zuora Billing - Revenue Integration](https://knowledgecenter.zuora.com/Zuora_Revenue/Zuora_Billing_-_Revenue_Integration).  | [optional] 
+**contract_recognized_revenue_accounting_code** | **str** | The accounting code on the Order Line Item object for customers using [Zuora Billing - Revenue Integration](https://knowledgecenter.zuora.com/Zuora_Revenue/Zuora_Billing_-_Revenue_Integration).  | [optional] 
+**custom_fields** | **dict(str, object)** | Container for custom fields of an Order Line Item object.  | [optional] 
+**deferred_revenue_accounting_code** | **str** | The deferred revenue accounting code for the Order Line Item.  | [optional] 
+**description** | **str** | The description of the Order Line Item.  | [optional] 
+**item_name** | **str** | The name of the Order Line Item.  | [optional] 
+**item_number** | **str** | The number for the Order Line Item.  | [optional] 
+**item_state** | **str** | The state of the Order Line Item. See [Order Line Item states, Order states, and state transitions](https://knowledgecenter.zuora.com/Billing/Subscriptions/Orders/Order_Line_Items/AB_Order_Line_Item_States_and_Order_States) for more information.  | [optional] 
+**item_type** | **str** | The type of the Order Line Item.   | [optional] 
+**list_price** | **float** | The extended list price for an order line item, calculated by the formula: listPrice &#x3D; listPricePerUnit * quantity  | [optional] 
+**list_price_per_unit** | **float** | The list price per unit for the Order Line Item.  | [optional] 
+**product_code** | **str** | The product code for the Order Line Item.  | [optional] 
+**product_rate_plan_charge_id** | **date** | Id of a Product Rate Plan Charge. Only one-time charges are supported.  | [optional] 
+**purchase_order_number** | **str** | Used by customers to specify the Purchase Order Number provided by the buyer.  | [optional] 
+**quantity** | **float** | The quantity of units, such as the number of authors in a hosted wiki service.  | [optional] 
+**recognized_revenue_accounting_code** | **str** | The recognized revenue accounting code for the Order Line Item.  | [optional] 
+**related_subscription_number** | **str** | Use this field to relate an order line item to an subscription. Specify this field to the subscription number of the subscription to relate.  | [optional] 
+**revenue_recognition_rule** | **str** | The Revenue Recognition rule for the Order Line Item.  | [optional] 
+**tax_code** | **str** | The tax code for the Order Line Item.  | [optional] 
+**tax_mode** | **str** | The tax mode for the Order Line Item.  | [optional] 
+**transaction_end_date** | **date** | The date a transaction is completed. The default value of this field is the transaction start date. Also, the value of this field should always equal or be later than the value of the &#x60;transactionStartDate&#x60; field.  | [optional] 
+**transaction_start_date** | **date** | The date a transaction starts. The default value of this field is the order date.  | [optional] 
+**unbilled_receivables_accounting_code** | **str** | The accounting code on the Order Line Item object for customers using [Zuora Billing - Revenue Integration](https://knowledgecenter.zuora.com/Zuora_Revenue/Zuora_Billing_-_Revenue_Integration).  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
